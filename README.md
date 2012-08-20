@@ -13,15 +13,11 @@ convenience with this gem?
 
 Add this line to your application's Gemfile:
 
-    gem 'gzipped_strings'
+    gem 'gzipped_strings', :git => "git://github.com/iosadchii/gzipped_strings.git"
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install gzipped_strings
 
 ## Usage
 
