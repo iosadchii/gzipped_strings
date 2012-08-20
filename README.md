@@ -1,6 +1,13 @@
 # GzippedStrings
 
-TODO: Write a gem description
+Monkey patches String class to enable Gzip
+compression/decompression. Adds String#gz_compress and
+String#gz_decompress
+
+Zlib doesn't provide methods such methods for a reason: ungzipping
+files in memory may be considered an antipattern. But if your files
+are really small and you understand the dangers then why not get some
+convenience with this gem?
 
 ## Installation
 
@@ -18,12 +25,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    # compress a string
+    gzipped_string = "hello".gz_compress
 
-## Contributing
+    # decompress it
+    gzipped_string.gz_decompress
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request

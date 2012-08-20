@@ -4,8 +4,8 @@ require File.expand_path('../lib/gzipped_strings/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Ivan Osadchii"]
   gem.email         = ["ivan.osadchii@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Monkey patches String class to add #gz_compress and #gz_uncompress methods.}
+  gem.summary       = %q{Allows to compress and decompress strings with Gzip}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
