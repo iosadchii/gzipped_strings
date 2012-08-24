@@ -27,3 +27,13 @@ And then execute:
     # decompress it
     gzipped_string.gz_decompress
 
+## Outside of rails
+
+    # Gemfile
+    gem 'gzipped_strings', :git => "git://github.com/iosadchii/gzipped_strings.git"
+
+    # gzipped_strings_test.rb
+    require 'bundler/setup'
+    require 'gzipped_strings'
+
+    puts "test string".gz_compress.gz_decompress
